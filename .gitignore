@@ -1,0 +1,3 @@
+#this will ignore all files within node_modules directory when committing to github
+node_modules/
+node_modules
