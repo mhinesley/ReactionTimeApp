@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reaction Time Game</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    
+    <meta http-equiv="X-Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    
+  </head>
+  <body>
+    <h1>Welcome to the Reaction Time Game!!</h1>
+    <p>You will be assessed 2 ways; visually and audibly</p>
+    <p>When you see the circle change color from red to green, click the circle as fast as you can</p>
+    <p>The circle will change color 5 times</p>
+    <p>Once all 5 visual times have been completed, the audible assessment will begin</p>
+    <p>When you hear the beep, click the circle as fast as you can</p>
+    <p>The beep will sound 5 times</p>
+    <p>Click the button below to start the game</p>
+    <button id="start">Start</button>
+    <p id="timer"></p>
+    <p id="result"></p>
+    <p id="average"></p>
+    
+    <!-- <p id="info"></p> -->
+    <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="reset-to-system">Reset to System Theme</button>
+
+  </body>
+  <script src="./renderer.js"></script>
+</html>
